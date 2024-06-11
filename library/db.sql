@@ -32,4 +32,11 @@ year INT NOT NULL,
 availability BOOLEAN NOT NULL DEFAULT false,
 FOREIGN KEY (bookId) REFERENCES books(id));
 
+ALTER TABLE borrowed
+DROP FOREIGN KEY borrowed_ibfk_1;
+
+ALTER TABLE borrowed
+ADD CONSTRAINT borrowed_ibfk_1
+FOREIGN KEY (bookId) REFERENCES books(id)
+ON DELETE CASCADE;
 */
