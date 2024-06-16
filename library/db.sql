@@ -20,7 +20,7 @@ availability BOOLEAN NOT NULL DEFAULT TRUE
 
 INSERT INTO books(title, author, year, availability)
 VALUES
-('Dienasgramata', 'Ralfs', 2024, true);
+('Biografija', 'Emiiiiils', 2024, true);
 
 
 CREATE TABLE borrowed(
@@ -31,6 +31,7 @@ author VARCHAR(255) NOT NULL,
 year INT NOT NULL,
 availability BOOLEAN NOT NULL DEFAULT false,
 FOREIGN KEY (bookId) REFERENCES books(id));
+
 
 ALTER TABLE borrowed
 DROP FOREIGN KEY borrowed_ibfk_1;
