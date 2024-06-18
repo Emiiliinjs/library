@@ -12,7 +12,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h1>Create a Book</h1>
+        <h1>Create</h1>
     </div>
     <div class="card-body">
         <form id="create-form" action="" method="post">
@@ -47,7 +47,7 @@
             <?php if (isset($errors["availability"])) : ?>
                 <p class="error"><?= htmlspecialchars($errors["availability"]) ?></p>
             <?php endif; ?>
-            <button id="create-poga" type="submit">Save</button>
+            <button id="create-poga" type="submit">Create Book</button>
         </form>
     </div>
 </div>

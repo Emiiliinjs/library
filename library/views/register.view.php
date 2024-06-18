@@ -21,7 +21,7 @@
                 <?php if(isset($errors["password"])) {?>
                     <p class="error"><?= $errors["password"] ?></p>
                 <?php } ?>
-                <span class="explanation">(must contain at least 8 characters, 1 uppercase, 1 lowercase, 1 special character, and 1 digit)</span>
+                <span class="explanation">8 characters, 1 uppercase, 1 lowercase, 1 special character, 1 digit</span>
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
         </form>

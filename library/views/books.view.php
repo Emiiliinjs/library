@@ -2,7 +2,7 @@
 <?php require "components/navbar.php" ?>
 
 
-
+<h1>All Books</h1>
 <div class="book-container">
   <?php foreach($books as $book): ?>
     <a href="/show?id=<?= $book["id"] ?>" class="book-card <?= $book["availability"] ? 'available' : 'unavailable' ?>">
@@ -10,7 +10,7 @@
       <div class="book-details">
         <h4>Author:</h4>
         <h3><?= $book["author"] ?></h3>
-        <h4>Published Year:</h4>
+        <h4>Year:</h4>
         <h3><?= $book["year"] ?></h3>
         <h4>Availability:</h4>
         <h3 class="<?= $book["availability"] ? 'available' : 'unavailable' ?>">
@@ -31,4 +31,4 @@
 </div>
 
 <?php require "components/footer.php" ?>
-<link rel="stylesheet" href="views/style/style.css"> 
+<link rel="stylesheet" href="views/style/books.css"> 
